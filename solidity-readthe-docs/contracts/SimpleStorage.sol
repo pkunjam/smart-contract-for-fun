@@ -1,7 +1,7 @@
 pragma solidity 0.5.2;
 
 /// @title SimpleStorage
-/// @author Balaji Pachai 
+/// @author Balaji Shetty Pachai 
 /// @notice A SimpleStorage contract used for setting and fetching values to and from Blockchain
 contract SimpleStorage {
     uint256 public data;

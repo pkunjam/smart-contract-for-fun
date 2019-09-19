@@ -5,7 +5,7 @@ const chai = require('chai')
 const assert = chai.assert;
 const SimpleStorage = artifacts.require('SimpleStorage');
 
-contract('SimpleStorage Test Suite', function(accounts) {
+contract('SimpleStorage test suite', function(accounts) {
   const COINBASE = accounts[0];
   const GASLIMIT = 8000000;
   let simpleStorageContractInstance;
