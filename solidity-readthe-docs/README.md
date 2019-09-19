@@ -13,3 +13,7 @@
 5. npm run test
 
 ```
+
+**Note**
+
+`Test cases do not cover negative scenarios.`
