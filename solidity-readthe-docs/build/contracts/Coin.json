@@ -3348,12 +3348,12 @@
         }
       },
       "links": {},
-      "address": "0xB5Db7270024DCCf4CcFcEBa17438Df105Fd396B6",
-      "transactionHash": "0xf535c2a7ef1843cf4842fb0875c9032e230bbc30c8a87128b5bf0a946f927d8b"
+      "address": "0xb82c995c7FB5117b761403c8547Cb1363C4A4c2F",
+      "transactionHash": "0x71685f3409a2535ba924ee613c47823c6ef1c93cb3dae6dc9a47e689ad157b52"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-23T12:16:53.477Z",
+  "updatedAt": "2019-09-24T12:52:36.958Z",
   "devdoc": {
     "author": "Balaji Shetty Pachai",
     "methods": {
