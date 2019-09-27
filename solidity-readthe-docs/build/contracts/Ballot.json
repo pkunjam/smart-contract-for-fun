@@ -9045,12 +9045,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x14e77dE1a6abeD924EB72Ac30703e5334A78e1cF",
-      "transactionHash": "0x6648235679a09ee12651d75bc20f67d7c9f6a83381cc25f96402296679495eb5"
+      "address": "0xDeaFc25086cC2C46669C4cf972fBe4164Ae4742e",
+      "transactionHash": "0x0b112217eeab9fe72cf8a0ac751b2f0068fc994f7993eff9f9db62730714eda1"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-26T06:40:23.878Z",
+  "updatedAt": "2019-09-27T10:29:23.288Z",
   "devdoc": {
     "author": "Balaji Shetty Pachai",
     "details": "Ballot contract for e-voting Reference: https://solidity.readthedocs.io/en/v0.5.11/solidity-by-example.html#voting",

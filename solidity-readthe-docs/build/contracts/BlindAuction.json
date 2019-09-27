@@ -9630,12 +9630,12 @@
         }
       },
       "links": {},
-      "address": "0xbBD8A73a55C14d3d818498d5689749294A884bB6",
-      "transactionHash": "0x63d9edb2b1980eb036f7236889edf1c26dc731932dde6f1e97d81cc87b085213"
+      "address": "0x82Ba8048a0Ba032A7fb952Ae99f61Ac11615283F",
+      "transactionHash": "0xd4427aad86234202ee88691591afb5de087721a93e63fa6f95e2ab62309849c4"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-26T06:40:24.598Z",
+  "updatedAt": "2019-09-27T10:29:24.163Z",
   "devdoc": {
     "author": "Balaji Shetty Pachai",
     "methods": {},
