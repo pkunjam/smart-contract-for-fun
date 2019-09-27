@@ -36,7 +36,7 @@ contract BlindAuction {
     }
 
     /// @notice Constructor function 
-    constructor (uint256 _biddingTime, uint256 _revealTIme, address payable _beneficiary) public {
+    constructor (uint256 _biddingTime, uint256 _revealTime, address payable _beneficiary) public {
         require(_beneficiary != address(0), "in BlindAuction:constructor(). Beneficiary is address(0).");
         require(_biddingTime > 0, "in BlindAuction:constructor(). Bidding time is 0.");
         
