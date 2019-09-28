@@ -1,0 +1,18 @@
+{
+  "name": "blockchain-games",
+  "version": "1.0.0",
+  "description": "Tic tac toe game developed using solidity.",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset",
+    "test": "truffle test"
+  },
+  "keywords": [
+    "migrate",
+    "compile",
+    "test"
+  ],
+  "author": "Balaji Shetty Pachai",
+  "license": "ISC"
+}
