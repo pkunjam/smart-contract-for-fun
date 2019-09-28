@@ -1248,12 +1248,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x6Cc21374d6ad8B5b146d7Be4eCddcF6E96644935",
-      "transactionHash": "0x9ca0cc04c9b414ce09dffcfb5983bfcaca1fdfa269f491c12f1c83d7febe3ece"
+      "address": "0x8E0b7E25d90160C3a542811e97027A983501fC6a",
+      "transactionHash": "0x7c8956f9139780e09fdc920e526a64faf47f797a836057b20939f71eb46dec76"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-09-24T12:52:36.564Z",
+  "updatedAt": "2019-09-27T10:29:22.353Z",
   "devdoc": {
     "author": "Balaji Shetty Pachai ",
     "methods": {
