@@ -1,0 +1,38 @@
+{
+  "name": "solidity-read-the-docs-contracts",
+  "version": "0.0.1",
+  "description": "Smart Contracts developed from https://solidity.readthedocs.io/en/v0.5.11/index.html, with test cases and migration scripts using truffle.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --reset",
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balajipachai/smart-contract-for-fun.git"
+  },
+  "keywords": [
+    "Solidity",
+    "Truffle",
+    "TDD",
+    "Ethereum"
+  ],
+  "author": "Balaji Shetty Pachai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balajipachai/smart-contract-for-fun/issues"
+  },
+  "homepage": "https://github.com/balajipachai/smart-contract-for-fun#readme",
+  "dependencies": {
+    "bignumber.js": "^9.0.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "left-pad": "^1.3.0",
+    "web3": "^0.20.7"
+  }
+}
