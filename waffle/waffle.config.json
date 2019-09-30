@@ -1,0 +1,7 @@
+{
+  "sourcePath": "./contracts",
+  "targetPath": "./build",
+  "npmPath": "./node_modules",
+  "legacyOutput": "true",
+  "outputHumanReadableAbi": "true"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "waffle",
+  "version": "1.0.0",
+  "description": "Testing out waffle, for writing smart contracts, developing test cases and much of exploration.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "waffle ./waffle.config.json",
+    "test": "mocha"
+  },
+  "keywords": [
+    "Ethereum",
+    "Waffle",
+    "TDD"
+  ],
+  "author": "Balaji Shetty Pachai",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^2.1.0",
+    "mocha": "^6.2.0"
+  }
+}
