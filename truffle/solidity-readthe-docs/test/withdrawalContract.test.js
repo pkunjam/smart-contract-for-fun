@@ -30,7 +30,6 @@ contract('WithdrawalContract Test Suite', function(accounts) {
       let mostSent = new bignumber(
         await withdrawalContractInstance.mostSent.call()
       );
-      console.log('mostSent: ', mostSent);
       assert.equal(
         mostSent.toNumber(),
         1 * 10 ** 18,
