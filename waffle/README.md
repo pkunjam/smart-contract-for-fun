@@ -15,12 +15,14 @@ mkdir test
 2. Installing Dependencies
 
 ```
+Ensure you are in the using-waffle directory
+
 npm i ethereum-waffle -D
 npm i chai -D
 npm i mocha -D
 ```
 
-3. Create the waffle-config.json
+3. Create the waffle.config.json
 
 ```
 {
