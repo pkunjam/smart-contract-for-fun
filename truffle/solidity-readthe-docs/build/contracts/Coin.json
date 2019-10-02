@@ -99,15 +99,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.2+commit.1df8f40c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"minter\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"balances\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"receiver\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"receiver\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"send\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Sent\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Balaji Shetty Pachai\",\"methods\":{\"mint(address,uint256)\":{\"params\":{\"amount\":\"Number of tokens to be minted and assigned to the receiver\",\"receiver\":\"Receiver account address\"}},\"send(address,uint256)\":{\"params\":{\"amount\":\"Number of tokens to be sent\",\"receiver\":\"Receiver account address\"}}},\"title\":\"Coin\"},\"userdoc\":{\"methods\":{\"constructor\":\"Constructor \",\"mint(address,uint256)\":{\"notice\":\"Function to mint tokens and assign to the receiver address\"},\"send(address,uint256)\":{\"notice\":\"Sends an amount of existing coins from any caller to an address\"}},\"notice\":\"Simplest form of cryptocurrency. Contract has some changes as compare to the one over here. Reference: https://solidity.readthedocs.io/en/v0.5.11/introduction-to-smart-contracts.html#subcurrency-example\"}},\"settings\":{\"compilationTarget\":{\"/home/balajipachai/Desktop/learning/smart-contract-for-fun/solidity-readthe-docs/contracts/Coin.sol\":\"Coin\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/balajipachai/Desktop/learning/smart-contract-for-fun/solidity-readthe-docs/contracts/Coin.sol\":{\"keccak256\":\"0x4fdae5f128a82b519320047cbb450822a5dec06b79faa8d5fec835ace4f1d58a\",\"urls\":[\"bzzr://a7865bf9320a5d23fb99b805f00aff4f9aaeca50d25ab17f15f0be0ee892b6cd\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151515610099576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603381526020018061077e6033913960400191505060405180910390fd5b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610696806100e86000396000f3fe608060405234801561001057600080fd5b5060043610610069576000357c010000000000000000000000000000000000000000000000000000000090048063075461721461006e57806327e235e3146100b857806340c10f1914610110578063d0679d341461015e575b600080fd5b6100766101ac565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100fa600480360360208110156100ce57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d1565b6040518082815260200191505060405180910390f35b61015c6004803603604081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506101e9565b005b6101aa6004803603604081101561017457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610355565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60016020528060005260406000206000915090505481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610290576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806105b5602b913960400191505060405180910390fd5b789f4f2726179a224501d762422c946590d910000000000000008111151515610304576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602f8152602001806105e0602f913960400191505060405180910390fd5b80600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055505050565b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515156103dd576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c81526020018061060f602c913960400191505060405180910390fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410151515610477576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603081526020018061063b6030913960400191505060405180910390fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555080600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507f3990db2d31862302a685e8086b5755072a6e2b5b780af1ee81ece35ee3cd3345338383604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505056fe696e20436f696e3a6f6e6c794d696e74657228292e2043616c6c6572206973206e6f74206d696e7465722e696e20436f696e3a6d696e7428292e20416d6f756e74206578636565647320746865207570706572206c696d69742e696e20436f696e3a73656e6428292e2043616c6c65722063616e6e6f7420626520616464726573732830292e696e20436f696e3a73656e6428292e2043616c6c65722068617320696e73756666696369656e742062616c616e63652ea165627a7a72305820dccbfa58d455c6fcd1195715dfcfcedda1cd964e8021f4b71dac20db02ef26c30029696e20436f696e3a636f6e7374727563746f7228292e2043616c6c65722063616e6e6f7420626520616464726573732830292e",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610069576000357c010000000000000000000000000000000000000000000000000000000090048063075461721461006e57806327e235e3146100b857806340c10f1914610110578063d0679d341461015e575b600080fd5b6100766101ac565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100fa600480360360208110156100ce57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d1565b6040518082815260200191505060405180910390f35b61015c6004803603604081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506101e9565b005b6101aa6004803603604081101561017457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610355565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60016020528060005260406000206000915090505481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610290576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806105b5602b913960400191505060405180910390fd5b789f4f2726179a224501d762422c946590d910000000000000008111151515610304576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602f8152602001806105e0602f913960400191505060405180910390fd5b80600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055505050565b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515156103dd576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c81526020018061060f602c913960400191505060405180910390fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410151515610477576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603081526020018061063b6030913960400191505060405180910390fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555080600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507f3990db2d31862302a685e8086b5755072a6e2b5b780af1ee81ece35ee3cd3345338383604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505056fe696e20436f696e3a6f6e6c794d696e74657228292e2043616c6c6572206973206e6f74206d696e7465722e696e20436f696e3a6d696e7428292e20416d6f756e74206578636565647320746865207570706572206c696d69742e696e20436f696e3a73656e6428292e2043616c6c65722063616e6e6f7420626520616464726573732830292e696e20436f696e3a73656e6428292e2043616c6c65722068617320696e73756666696369656e742062616c616e63652ea165627a7a72305820dccbfa58d455c6fcd1195715dfcfcedda1cd964e8021f4b71dac20db02ef26c30029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.2+commit.1df8f40c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"minter\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"address\"}],\"name\":\"balances\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"receiver\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"receiver\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"send\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Sent\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Balaji Shetty Pachai\",\"methods\":{\"mint(address,uint256)\":{\"params\":{\"amount\":\"Number of tokens to be minted and assigned to the receiver\",\"receiver\":\"Receiver account address\"}},\"send(address,uint256)\":{\"params\":{\"amount\":\"Number of tokens to be sent\",\"receiver\":\"Receiver account address\"}}},\"title\":\"Coin\"},\"userdoc\":{\"methods\":{\"constructor\":\"Constructor \",\"mint(address,uint256)\":{\"notice\":\"Function to mint tokens and assign to the receiver address\"},\"send(address,uint256)\":{\"notice\":\"Sends an amount of existing coins from any caller to an address\"}},\"notice\":\"Simplest form of cryptocurrency. Contract has some changes as compare to the one over here. Reference: https://solidity.readthedocs.io/en/v0.5.11/introduction-to-smart-contracts.html#subcurrency-example\"}},\"settings\":{\"compilationTarget\":{\"/home/balajipachai/Desktop/learning/smart-contract-for-fun/truffle/solidity-readthe-docs/contracts/Coin.sol\":\"Coin\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/balajipachai/Desktop/learning/smart-contract-for-fun/truffle/solidity-readthe-docs/contracts/Coin.sol\":{\"keccak256\":\"0x4fdae5f128a82b519320047cbb450822a5dec06b79faa8d5fec835ace4f1d58a\",\"urls\":[\"bzzr://a7865bf9320a5d23fb99b805f00aff4f9aaeca50d25ab17f15f0be0ee892b6cd\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151515610099576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603381526020018061077e6033913960400191505060405180910390fd5b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610696806100e86000396000f3fe608060405234801561001057600080fd5b5060043610610069576000357c010000000000000000000000000000000000000000000000000000000090048063075461721461006e57806327e235e3146100b857806340c10f1914610110578063d0679d341461015e575b600080fd5b6100766101ac565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100fa600480360360208110156100ce57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d1565b6040518082815260200191505060405180910390f35b61015c6004803603604081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506101e9565b005b6101aa6004803603604081101561017457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610355565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60016020528060005260406000206000915090505481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610290576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806105b5602b913960400191505060405180910390fd5b789f4f2726179a224501d762422c946590d910000000000000008111151515610304576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602f8152602001806105e0602f913960400191505060405180910390fd5b80600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055505050565b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515156103dd576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c81526020018061060f602c913960400191505060405180910390fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410151515610477576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603081526020018061063b6030913960400191505060405180910390fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555080600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507f3990db2d31862302a685e8086b5755072a6e2b5b780af1ee81ece35ee3cd3345338383604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505056fe696e20436f696e3a6f6e6c794d696e74657228292e2043616c6c6572206973206e6f74206d696e7465722e696e20436f696e3a6d696e7428292e20416d6f756e74206578636565647320746865207570706572206c696d69742e696e20436f696e3a73656e6428292e2043616c6c65722063616e6e6f7420626520616464726573732830292e696e20436f696e3a73656e6428292e2043616c6c65722068617320696e73756666696369656e742062616c616e63652ea165627a7a7230582036966fab533477a0f18d277f1c670de0d32f463b801b451a20151b746d0468a90029696e20436f696e3a636f6e7374727563746f7228292e2043616c6c65722063616e6e6f7420626520616464726573732830292e",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610069576000357c010000000000000000000000000000000000000000000000000000000090048063075461721461006e57806327e235e3146100b857806340c10f1914610110578063d0679d341461015e575b600080fd5b6100766101ac565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100fa600480360360208110156100ce57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d1565b6040518082815260200191505060405180910390f35b61015c6004803603604081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506101e9565b005b6101aa6004803603604081101561017457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610355565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60016020528060005260406000206000915090505481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610290576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602b8152602001806105b5602b913960400191505060405180910390fd5b789f4f2726179a224501d762422c946590d910000000000000008111151515610304576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602f8152602001806105e0602f913960400191505060405180910390fd5b80600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055505050565b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515156103dd576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c81526020018061060f602c913960400191505060405180910390fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410151515610477576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603081526020018061063b6030913960400191505060405180910390fd5b80600160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254039250508190555080600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055507f3990db2d31862302a685e8086b5755072a6e2b5b780af1ee81ece35ee3cd3345338383604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a1505056fe696e20436f696e3a6f6e6c794d696e74657228292e2043616c6c6572206973206e6f74206d696e7465722e696e20436f696e3a6d696e7428292e20416d6f756e74206578636565647320746865207570706572206c696d69742e696e20436f696e3a73656e6428292e2043616c6c65722063616e6e6f7420626520616464726573732830292e696e20436f696e3a73656e6428292e2043616c6c65722068617320696e73756666696369656e742062616c616e63652ea165627a7a7230582036966fab533477a0f18d277f1c670de0d32f463b801b451a20151b746d0468a90029",
   "sourceMap": "314:1448:2:-;;;630:156;8:9:-1;5:2;;;30:1;27;20:12;5:2;630:156:2;692:1;670:24;;:10;:24;;;;662:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;769:10;760:6;;:19;;;;;;;;;;;;;;;;;;314:1448;;;;;;",
   "deployedSourceMap": "314:1448:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;314:1448:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;334:21;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;361:43;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;361:43:2;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;997:195;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;997:195:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1377:381;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1377:381:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;334:21;;;;;;;;;;;;;:::o;361:43::-;;;;;;;;;;;;;;;;;:::o;997:195::-;523:6;;;;;;;;;;;509:20;;:10;:20;;;501:76;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1091:4;1081:6;:14;;1073:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1179:6;1157:8;:18;1166:8;1157:18;;;;;;;;;;;;;;;;:28;;;;;;;;;;;997:195;;:::o;1377:381::-;1472:1;1450:24;;:10;:24;;;;1442:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1565:6;1541:8;:20;1550:10;1541:20;;;;;;;;;;;;;;;;:30;;1533:91;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1658:6;1634:8;:20;1643:10;1634:20;;;;;;;;;;;;;;;;:30;;;;;;;;;;;1696:6;1674:8;:18;1683:8;1674:18;;;;;;;;;;;;;;;;:28;;;;;;;;;;;1717:34;1722:10;1734:8;1744:6;1717:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1377:381;;:::o",
   "source": "pragma solidity >=0.5.0 <0.7.0;\n\n/// @title Coin\n/// @author Balaji Shetty Pachai\n/// @notice Simplest form of cryptocurrency. \n/// @notice Contract has some changes as compare to the one over here.\n/// Reference: https://solidity.readthedocs.io/en/v0.5.11/introduction-to-smart-contracts.html#subcurrency-example\ncontract Coin {\n    address public minter;\n    mapping(address => uint256) public balances;\n    event Sent(address from, address to, uint256 amount);\n\n    modifier onlyMinter() {\n        require(msg.sender == minter, \"in Coin:onlyMinter(). Caller is not minter.\");\n        _;\n    }\n\n    /// @notice Constructor \n    constructor () public {\n        require(msg.sender != address(0), \"in Coin:constructor(). Caller cannot be address(0).\");\n        minter = msg.sender;\n    }\n\n    /// @notice Function to mint tokens and assign to the receiver address\n    /// @param receiver Receiver account address\n    /// @param amount Number of tokens to be minted and assigned to the receiver\n    function mint(address receiver, uint256 amount) public onlyMinter {\n        require(amount <= 1e60, \"in Coin:mint(). Amount exceeds the upper limit.\");\n        balances[receiver] += amount;\n    }\n\n    /// @notice Sends an amount of existing coins from any caller to an address\n    /// @param receiver Receiver account address\n    /// @param amount Number of tokens to be sent\n    function send(address receiver, uint256 amount) public {\n        require(msg.sender != address(0), \"in Coin:send(). Caller cannot be address(0).\");\n        require(balances[msg.sender] >= amount, \"in Coin:send(). Caller has insufficient balance.\");\n        balances[msg.sender] -= amount;\n        balances[receiver] += amount;\n        emit Sent(msg.sender, receiver, amount);\n    }\n\n\n}",
-  "sourcePath": "/home/balajipachai/Desktop/learning/smart-contract-for-fun/solidity-readthe-docs/contracts/Coin.sol",
+  "sourcePath": "/home/balajipachai/Desktop/learning/smart-contract-for-fun/truffle/solidity-readthe-docs/contracts/Coin.sol",
   "ast": {
-    "absolutePath": "/home/balajipachai/Desktop/learning/smart-contract-for-fun/solidity-readthe-docs/contracts/Coin.sol",
+    "absolutePath": "/home/balajipachai/Desktop/learning/smart-contract-for-fun/truffle/solidity-readthe-docs/contracts/Coin.sol",
     "exportedSymbols": {
       "Coin": [
         823
@@ -342,7 +342,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1510,
+                            "referencedDeclaration": 1516,
                             "src": "509:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -418,10 +418,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "501:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -495,7 +495,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1510,
+                            "referencedDeclaration": 1516,
                             "src": "670:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -614,10 +614,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "662:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -673,7 +673,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1510,
+                        "referencedDeclaration": 1516,
                         "src": "769:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -825,10 +825,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "1073:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1056,7 +1056,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1510,
+                            "referencedDeclaration": 1516,
                             "src": "1450:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1175,10 +1175,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "1442:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1242,7 +1242,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1510,
+                              "referencedDeclaration": 1516,
                               "src": "1550:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1329,10 +1329,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "1533:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1389,7 +1389,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1510,
+                          "referencedDeclaration": 1516,
                           "src": "1643:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1531,7 +1531,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1510,
+                          "referencedDeclaration": 1516,
                           "src": "1722:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1712,7 +1712,7 @@
     "src": "0:1762:2"
   },
   "legacyAST": {
-    "absolutePath": "/home/balajipachai/Desktop/learning/smart-contract-for-fun/solidity-readthe-docs/contracts/Coin.sol",
+    "absolutePath": "/home/balajipachai/Desktop/learning/smart-contract-for-fun/truffle/solidity-readthe-docs/contracts/Coin.sol",
     "exportedSymbols": {
       "Coin": [
         823
@@ -1947,7 +1947,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1510,
+                            "referencedDeclaration": 1516,
                             "src": "509:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2023,10 +2023,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "501:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2100,7 +2100,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1510,
+                            "referencedDeclaration": 1516,
                             "src": "670:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2219,10 +2219,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "662:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2278,7 +2278,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1510,
+                        "referencedDeclaration": 1516,
                         "src": "769:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2430,10 +2430,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "1073:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2661,7 +2661,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1510,
+                            "referencedDeclaration": 1516,
                             "src": "1450:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2780,10 +2780,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "1442:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2847,7 +2847,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1510,
+                              "referencedDeclaration": 1516,
                               "src": "1550:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2934,10 +2934,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1513,
-                        1514
+                        1519,
+                        1520
                       ],
-                      "referencedDeclaration": 1514,
+                      "referencedDeclaration": 1520,
                       "src": "1533:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2994,7 +2994,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1510,
+                          "referencedDeclaration": 1516,
                           "src": "1643:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -3136,7 +3136,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1510,
+                          "referencedDeclaration": 1516,
                           "src": "1722:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -3348,12 +3348,12 @@
         }
       },
       "links": {},
-      "address": "0x9133E8aDf4c31f1EDe442C90459957510Ed06969",
-      "transactionHash": "0x23945a0ab87c57fe696922b2191c48e24f0e035f43fcaa9856966ba52fc62619"
+      "address": "0x78037bF1e5631854C18d521dc476b5bCEc831C5E",
+      "transactionHash": "0xfb7eb031852acfbec17de1345b31b74dcdf48b6d844e3384ff3f5189393cb34e"
     }
   },
   "schemaVersion": "3.0.15",
-  "updatedAt": "2019-09-28T18:45:44.786Z",
+  "updatedAt": "2019-10-02T07:18:28.407Z",
   "devdoc": {
     "author": "Balaji Shetty Pachai",
     "methods": {

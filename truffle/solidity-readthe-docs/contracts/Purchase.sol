@@ -13,7 +13,7 @@ contract Purchase {
     mapping(uint256 => address) public ownerOfValue;
     mapping(address => uint256) public pendingReturns;
 
-    enum State { Created, Locked, Inactive }
+    enum State { Created, Locked, Sold, Closed }
     State public state;
 
     // Consider _value to be a valid ERC721 token ID
@@ -22,6 +22,7 @@ contract Purchase {
         seller = msg.sender;
         value = _value;
         ownerOfValue[value] = msg.sender;
+        state = State.Created;
         
     }
 
@@ -52,11 +53,10 @@ contract Purchase {
     /// Abort the purchase and reclaim the ether.
     /// Can only be called by the seller before
     /// the contract is locked.
-    /// Added a reason string to better know why the sell is being aborted
+    /// Added a reason string to better know why the sale is being aborted
     function abort(string memory reason) public onlySeller inState(State.Created) {
         emit Aborted(msg.sender, reason, now);
-        state = State.Inactive;
-        msg.sender.transfer(address(this).balance);
+        state = State.Closed;
     }
 
     /// Confirm the purchase as buyer.
@@ -77,16 +77,18 @@ contract Purchase {
         // It is important to change the state first because
         // otherwise, the contracts called using `send` below
         // can call in again here.
-        state = State.Inactive;
+        state = State.Sold;
         pendingReturns[seller] += address(this).balance;
         ownerOfValue[value] = msg.sender;
     }
 
-    function withdraw() public inState(State.Locked) {
+    function withdraw() public inState(State.Sold) {
         require(msg.sender != address(0), "in Purchase:withdraw(). Caller cannot be address zero.");
         uint256 amountToTransfer = pendingReturns[msg.sender];
+        pendingReturns[msg.sender] = 0;
+        if (msg.sender == seller) {
+            state = State.Closed;
+        }
         msg.sender.transfer(amountToTransfer);
     }
-
-
 }
