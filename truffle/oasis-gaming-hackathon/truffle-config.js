@@ -44,10 +44,12 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
-    development: {
+    ganache: {
+      protocol: 'http',
       host: '127.0.0.1', // Localhost (default: none)
       port: 8545, // Standard Ethereum port (default: none)
-      network_id: '*' // Any network (default: none)
+      network_id: '*', // Any network (default: none)
+      name: 'ganache'
     },
     matic: {
       provider: () =>
@@ -57,7 +59,8 @@ module.exports = {
       confirmations: 2, // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
-      gasPrice: 0
+      gasPrice: 0,
+      name: 'matic'
     }
     // Another network with more advanced options...
     // advanced: {
